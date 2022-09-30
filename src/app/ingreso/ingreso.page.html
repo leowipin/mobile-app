@@ -1,5 +1,77 @@
 <ion-content>
-  <div class="main-container">
+  <ion-grid>
+
+    <ion-row class="header">
+      <ion-img src="../../assets/logo.svg"></ion-img>
+      <ion-title class="ion-text-center">Iniciar sesión</ion-title>
+    </ion-row>
+
+    <ion-row class="data">
+      <ion-card>
+        <ion-card-content>
+          <ion-label class="info">
+            <div>
+              <ion-text>Correo</ion-text>
+              <ion-input type="email"></ion-input>
+            </div>
+          </ion-label>
+          <ion-label class="info">
+            <div>
+              <ion-text>Contraseña</ion-text>
+              <ion-input type="password"></ion-input>
+            </div>
+          </ion-label>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+
+    <ion-row class="tail">
+      <ion-label class="action">
+        <ion-text class="ion-text-center"
+        ><div class="semibold-text">¿Olvidaste tu contraseña?</div></ion-text
+      >
+      </ion-label>
+      
+      <ion-label class="action"><ion-button color="dark" routerLink="tabs"
+        ><ion-text
+          ><div class="semibold-text">Iniciar</div></ion-text
+        ></ion-button
+      ></ion-label>
+      <ion-label class="action"><ion-text class="semibold-text">Omitir</ion-text></ion-label>
+      <ion-label class="action"><ion-text class="semibold-text">Registrarse</ion-text></ion-label>
+      <ion-label class="action"><ion-text>Iniciar con</ion-text></ion-label>
+      <ion-label class="action-net">
+       <div class="networks">
+          <div class="icon-container">
+            <img class="icon" src="../../assets/icon/facebook-icon.svg">
+          </div>
+          <div class="icon-container">
+            <img class="icon" src="../../assets/icon/google-icon.svg">
+          </div>
+          <div class="icon-container">
+            <img class="icon" src="../../assets/icon/apple-icon.svg">
+          </div>
+        </div>
+      </ion-label>
+      <!--<ion-label class="action">
+        <div class="networks">
+          <div class="icon-container">
+            <img class="icon" src="../../assets/icon/facebook-icon.svg">
+          </div>
+          <div class="icon-container">
+            <img class="icon" src="../../assets/icon/google-icon.svg">
+          </div>
+          <div class="icon-container">
+            <img class="icon" src="../../assets/icon/apple-icon.svg">
+          </div>
+        </div>
+      </ion-label>-->
+      
+      
+    </ion-row>
+  </ion-grid>
+
+  <!--<div class="main-container">
     <ion-item lines="none">
       <ion-img src="../../assets/logo.svg"></ion-img>
     </ion-item>
@@ -55,5 +127,5 @@
         </ion-col>
       </ion-row>
     </ion-grid>
-  </div>
+  </div>-->
 </ion-content>
