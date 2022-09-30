@@ -24,3 +24,30 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+/* fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Nunito+Sans:wght@400;600;700&display=swap');
+
+ion-title{
+    font-family: 'Merriweather', serif;
+}
+
+ion-label, ion-text{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+ion-label{
+    font-weight: 700;
+}
+
+ion-text{
+    font-weight: 400;
+}
+
+ion-img{
+    margin: auto;
+}
+
+.texto-semibold{
+    font-weight: 600;
+}

@@ -1,0 +1,59 @@
+ion-title{
+    margin-top: 5vh;
+}
+
+ion-card{
+    margin: 5vh 0 5vh 0;
+}
+
+ion-input{
+    border-bottom:1px solid;
+}
+
+ion-label{
+    width: 100%;
+}
+
+ion-button{
+   width: 75%;     
+}
+
+ion-col{
+    display: flex;
+    justify-content: center;
+}
+
+.datos, .acciones, .icon-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.datos{
+    row-gap: 3vh;   
+    margin: 2vh 0 2vh 0;
+
+}
+.acciones{
+    row-gap: 2vh;
+    align-items: center;
+}
+
+
+.main-container{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.icon-container{
+    border: 2px solid #D7D7D7;
+    border-radius: 6%;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+}
+
+.icon{
+    margin: 1vh 0 1vh 0;
+}
+
