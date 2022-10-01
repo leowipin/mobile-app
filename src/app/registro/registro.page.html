@@ -1,0 +1,128 @@
+<ion-content>
+  <ion-grid>
+    <ion-row class="header">
+      <ion-img src="../../assets/logo.svg"></ion-img>
+      <ion-title class="ion-text-center">Bienvenido</ion-title>
+    </ion-row>
+
+    <ion-row class="data">
+      <ion-card>
+        <ion-card-content>
+          <ion-label class="info">
+            <ion-label class="i">
+              <ion-text class="var">Nombre</ion-text>
+              <ion-input class="var" type="text"></ion-input>
+            </ion-label>
+          </ion-label>
+          <ion-label class="info">
+            <ion-label class="i">
+              <ion-text class="var">Apellido</ion-text>
+              <ion-input class="var" type="text"></ion-input>
+            </ion-label>
+          </ion-label>
+          <ion-label class="info">
+            <ion-label class="i">
+              <ion-text class="var">Correo</ion-text>
+              <ion-input class="var" type="email"></ion-input>
+            </ion-label>
+          </ion-label>
+          <ion-label class="info">
+            <ion-label class="i">
+              <ion-text class="var">Teléfono</ion-text>
+              <ion-input class="var" type="text"></ion-input>
+            </ion-label>
+          </ion-label>
+          <ion-label class="info">
+            <ion-label class="i">
+              <ion-text class="var">Contraseña</ion-text>
+              <ion-input class="var" type="password"></ion-input>
+            </ion-label>
+          </ion-label>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+
+    <ion-row class="tail">
+      <ion-label class="action">
+        
+          <div class="terms-div">
+            <ion-checkbox slot="start"></ion-checkbox>
+            <ion-text
+              ><div class="semibold-text">
+                Aceptar
+                <a id="open-terms-modal" expand="block"
+                  >terminos y condiciones</a
+                >
+              </div></ion-text
+            >
+          </div>
+        
+          
+        
+      </ion-label>
+      <ion-label class="action"
+        ><ion-button color="dark" routerLink=""
+          ><ion-text
+            ><div class="semibold-text">Registrarse</div></ion-text
+          ></ion-button
+        ></ion-label
+      >
+      <ion-label class="action"
+        ><ion-text class="semibold-text">
+          ¿Ya tienes una cuenta? <a routerLink="">Iniciar sesión</a></ion-text
+        ></ion-label
+      >
+    </ion-row>
+  </ion-grid>
+
+  <!--Terms and condidtion inline modal-->
+  <ion-modal #modal trigger="open-terms-modal">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title size="small">Terminos y condiciones</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="confirm()">
+              <div class="btn-confirm-modal">Aceptar</div>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <ion-text
+          >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+          pellentesque mauris nec feugiat pharetra. Morbi finibus sit amet risus
+          vitae ultrices. Nulla posuere bibendum tellus sit amet facilisis.
+          Aliquam imperdiet enim id erat fermentum, ut fringilla dolor
+          imperdiet. In molestie nisi sed vulputate feugiat. Nam consectetur
+          dapibus diam, vitae luctus libero hendrerit sit amet. Ut a mattis
+          nunc. Donec sed aliquet eros. Vivamus ipsum quam, bibendum ut vehicula
+          a, congue vel lorem. Aliquam ornare velit vel nunc auctor sagittis.
+          Sed sit amet pulvinar enim. Praesent libero turpis, sodales vel lectus
+          ac, tincidunt imperdiet quam. Morbi ut mi enim. In viverra enim at
+          mattis fringilla. Aenean mi magna, posuere id feugiat euismod, lacinia
+          ac tellus. Vivamus accumsan, nisi eget tempor efficitur, est justo
+          mattis dolor, eu placerat dolor mauris ut risus. Etiam id orci ante.
+          Etiam feugiat auctor lacus imperdiet laoreet. Quisque tempus, neque eu
+          vulputate tincidunt, nunc justo condimentum nisi, vitae euismod tellus
+          metus in lacus. Vivamus quis venenatis magna, ac pharetra mi.
+          Vestibulum ante tortor, pharetra ut hendrerit vitae, fringilla tempor
+          quam. Nam justo dui, molestie sit amet enim fermentum, euismod
+          consequat nunc. Etiam molestie elit sit amet convallis imperdiet.
+          Maecenas dictum nulla nec nisl ullamcorper, eget pellentesque nisl
+          porttitor. Duis aliquet enim id ligula gravida ullamcorper. Etiam
+          lectus est, pharetra vel dictum ut, iaculis et est. Mauris vel lorem
+          porta, convallis ex vitae, eleifend elit. Etiam faucibus turpis nec
+          pellentesque rutrum. Integer velit orci, pharetra in scelerisque sit
+          amet, semper at metus. Sed sodales pretium est, nec mollis quam
+          placerat sed. Pellentesque habitant morbi tristique senectus et netus
+          et malesuada fames ac turpis egestas. Maecenas ut egestas nulla.
+          Nullam eu felis a dui suscipit blandit in ac mi. Pellentesque in
+          feugiat risus, sit amet congue ante. Nullam condimentum et dui ut
+          hendrerit. Praesent ac volutpat sapien. Nam quis est nec justo varius
+          congue.</ion-text
+        >
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+</ion-content>

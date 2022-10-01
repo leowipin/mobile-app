@@ -1,6 +1,5 @@
 <ion-content>
   <ion-grid>
-
     <ion-row class="header">
       <ion-img src="../../assets/logo.svg"></ion-img>
       <ion-title class="ion-text-center">Iniciar sesión</ion-title>
@@ -10,16 +9,16 @@
       <ion-card>
         <ion-card-content>
           <ion-label class="info">
-            <div>
-              <ion-text>Correo</ion-text>
-              <ion-input type="email"></ion-input>
-            </div>
+            <ion-label class="i">
+              <ion-text class="var">Correo</ion-text>
+              <ion-input class="var" type="email"></ion-input>
+            </ion-label>
           </ion-label>
           <ion-label class="info">
-            <div>
-              <ion-text>Contraseña</ion-text>
-              <ion-input type="password"></ion-input>
-            </div>
+            <ion-label class="i">
+              <ion-text class="var">Contraseña</ion-text>
+              <ion-input class="var" type="password"></ion-input>
+            </ion-label>
           </ion-label>
         </ion-card-content>
       </ion-card>
@@ -28,104 +27,73 @@
     <ion-row class="tail">
       <ion-label class="action">
         <ion-text class="ion-text-center"
-        ><div class="semibold-text">¿Olvidaste tu contraseña?</div></ion-text
-      >
+          ><div class="semibold-text">
+            <a id="open-recovery-modal" expand="block"
+              >¿Olvidaste tu contraseña?</a
+            >
+          </div></ion-text
+        >
       </ion-label>
-      
-      <ion-label class="action"><ion-button color="dark" routerLink="tabs"
-        ><ion-text
-          ><div class="semibold-text">Iniciar</div></ion-text
-        ></ion-button
-      ></ion-label>
-      <ion-label class="action"><ion-text class="semibold-text">Omitir</ion-text></ion-label>
-      <ion-label class="action"><ion-text class="semibold-text">Registrarse</ion-text></ion-label>
+
+      <ion-label class="action"
+        ><ion-button color="dark" routerLink="tabs" class="iniciar-button"
+          ><ion-text
+            ><div class="semibold-text">Iniciar</div></ion-text
+          ></ion-button
+        ></ion-label
+      >
+      <ion-label class="action"
+        ><ion-text class="semibold-text"
+          ><a routerLink="tabs">Omitir</a></ion-text
+        ></ion-label
+      >
+      <ion-label class="action"
+        ><ion-text class="semibold-text"
+          ><a routerLink="registro">Registrarse</a></ion-text
+        ></ion-label
+      >
       <ion-label class="action"><ion-text>Iniciar con</ion-text></ion-label>
       <ion-label class="action-net">
-       <div class="networks">
+        <div class="networks">
           <div class="icon-container">
-            <img class="icon" src="../../assets/icon/facebook-icon.svg">
+            <img class="icon" src="../../assets/icon/facebook-icon.svg" />
           </div>
           <div class="icon-container">
-            <img class="icon" src="../../assets/icon/google-icon.svg">
+            <img class="icon" src="../../assets/icon/google-icon.svg" />
           </div>
           <div class="icon-container">
-            <img class="icon" src="../../assets/icon/apple-icon.svg">
+            <img class="icon" src="../../assets/icon/apple-icon.svg" />
           </div>
         </div>
       </ion-label>
-      <!--<ion-label class="action">
-        <div class="networks">
-          <div class="icon-container">
-            <img class="icon" src="../../assets/icon/facebook-icon.svg">
-          </div>
-          <div class="icon-container">
-            <img class="icon" src="../../assets/icon/google-icon.svg">
-          </div>
-          <div class="icon-container">
-            <img class="icon" src="../../assets/icon/apple-icon.svg">
-          </div>
-        </div>
-      </ion-label>-->
-      
-      
     </ion-row>
   </ion-grid>
 
-  <!--<div class="main-container">
-    <ion-item lines="none">
-      <ion-img src="../../assets/logo.svg"></ion-img>
-    </ion-item>
-
-    <ion-title class="ion-text-center">Iniciar sesión</ion-title>
-
-    <ion-card>
-      <ion-card-content>
-        <div class="datos">
-          <div>
-            <ion-text>Correo</ion-text>
-            <ion-input type="email"></ion-input>
-          </div>
-          <div>
-            <ion-text>Contraseña</ion-text>
-            <ion-input type="password"></ion-input>
-          </div>
-        </div>
-      </ion-card-content>
-    </ion-card>
-
-    <div class="acciones">
-      <ion-text class="ion-text-center"
-        ><div class="texto-semibold">¿Olvidaste tu contraseña?</div></ion-text
-      >
-      <ion-button color="dark" routerLink = "tabs"
-        ><ion-text
-          ><div class="texto-semibold">Iniciar</div></ion-text
-        ></ion-button
-      >
-      <ion-text><div class="texto-semibold">Omitir</div></ion-text>
-      <ion-text><div class="texto-semibold">Registrarse</div></ion-text>
-      <ion-text>Iniciar con</ion-text>
-
-      
-    </div>
-    <ion-grid>
-      <ion-row>
-        <ion-col size="4" class="ion-text-center">
-          <div class="icon-container">
-            <img class="icon" src="../../assets/icon/facebook-icon.svg">
-          </div>
-        </ion-col>
-        <ion-col size="4"  class="ion-text-center">
-          <div class="icon-container">
-            <img class="icon" src="../../assets/icon/google-icon.svg">
-          </div>
-        </ion-col>
-        <ion-col size="4"  class="ion-text-center">
-          <div class="icon-container">
-            <img class="icon" src="../../assets/icon/apple-icon.svg">
-          </div>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </div>-->
+  <!--recovery password inline modal-->
+  <ion-modal #modal trigger="open-recovery-modal">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title size="small">¿Olvidaste tu contraseña?</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="confirm()">
+              <div class="btn-confirm-modal">Enviar</div>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <ion-label class="info">
+          <ion-label class="i-modal">
+            <ion-text class="var">Ingresa el correo con el que inicias sesión </ion-text>
+            <ion-input class="var"
+              #inputEmail
+              type="email"
+              (input)="showInput(inputEmail.value)"
+            ></ion-input>
+          </ion-label>
+        </ion-label>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
 </ion-content>

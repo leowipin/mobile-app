@@ -28,7 +28,7 @@
 /* fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Nunito+Sans:wght@400;600;700&display=swap');
 
-ion-title{
+ion-title, .btn-confirm-modal{
     font-family: 'Merriweather', serif;
 }
 
@@ -48,6 +48,30 @@ ion-img{
     margin: auto;
 }
 
+a{
+    color: inherit;
+}
+
 .semibold-text{
     font-weight: 600;
 }
+
+.regular-text{
+    font-weight: 400;
+}
+
+/* ion-modal*/
+ion-modal {
+    --border-radius: 16px;
+    --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+  
+  ion-modal::part(backdrop) {
+    background: rgba(209, 213, 219);
+    opacity: 1;
+  }
+  
+  ion-modal ion-toolbar {
+    --background: #242424;
+    --color: white;
+  }

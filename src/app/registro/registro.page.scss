@@ -1,26 +1,26 @@
-ion-card-content, ion-row, .tail, .info, .action, .action-net, .icon-container, .email-recovery{
+ion-card-content, ion-row, .tail, .info, var, .action, .action-net, .icon-container{
     display: flex;
     flex-direction: column;
 }
 
-.info, .action, .action-net, .icon-container{
+.info, .var, .action, .action-net, .icon-container{
     justify-content: center;
 }
 
-.action-net, .action, .icon-container, .email-recovery{
+.action-net, .action, .icon-container{
     align-items: center;
 }
 
-ion-card, ion-card-content, .var{
+ion-card, ion-card-content{
     height: 100%
 }
 
-.data, .tail{
-    height: 40%;
+.register-button, .networks{
+    width: 75%;
 }
 
-.iniciar-button, .networks{
-    width: 75%;
+.var{
+    height: 100%;
 }
 
 ion-input{
@@ -36,16 +36,20 @@ ion-grid{
    height: 20%;
 }
 
-.info{
+.data{
     height: 50%;
+}
+
+.tail{
+    height: 30%;
+}
+
+.info{
+    height: 20%;
 }
 
 .i{
     height: 33%;
-}
-
-.i-modal{
-    height: 50%;
 }
 
 .action-net{
@@ -53,7 +57,7 @@ ion-grid{
 }
 
 .action{
-    height: 15%;
+    height: 33%;
 }
 
 .networks{
@@ -68,11 +72,21 @@ ion-grid{
     border-radius: 15%;
 }
 
-#open-recovery-modal{
+#open-terms-modal{
     text-decoration: underline;
     cursor: pointer;
 }
 
 ion-modal{
-    --height: 33%;
+    --height: 80%;
 }
+
+.terms-div{
+    display: flex;
+    column-gap: 2vw;
+}
+
+
+
+
+
