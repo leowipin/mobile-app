@@ -5,7 +5,16 @@ import { InicioPage } from './inicio.page';
 const routes: Routes = [
   {
     path: '',
-    component: InicioPage,
+    children:[
+      {
+        path: 'product-detail',
+        loadChildren: () => import('../product-detail/product-detail.module').then( m => m.ProductDetailPageModule)
+      },
+      {
+        path: '',
+        component: InicioPage
+      }
+    ]
   }
 ];
 

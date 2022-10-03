@@ -6,3 +6,17 @@ ion-col{
     display: flex;
     align-items: center;
 }
+
+a{
+    text-decoration: none;
+}
+
+.product-data{
+    margin-top: 2%;
+}
+
+.card-product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
