@@ -1,3 +1,7 @@
+ion-grid{
+    height: 100%;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -13,4 +17,59 @@
 
 .cart{
     width: 14%;
+}
+
+.img{
+    height: 50%;
+}
+
+.name{
+    height: 7%;
+    align-items: center;
+}
+
+.price{
+    height: 7%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review{
+    height:7% ;
+    align-items: center;
+    gap: 6%;
+}
+
+.comment{
+    height: 19%;
+}
+
+.add{
+    height: 10%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-img{
+    height: 100%;
+}
+
+.price-label{
+    font-size: 1.2rem;
+}
+
+.fav-button{
+    width: 15%;
+}
+
+.add-button{
+    width: 75%;
+}
+
+.star-number{
+    margin-left: 1vw;
+}
+
+#product-name{
+    font-size: 1.1rem;
 }
