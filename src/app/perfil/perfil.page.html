@@ -4,4 +4,50 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content> </ion-content>
+<ion-content>
+  <ion-grid class="main-grid">
+    <ion-row class="user">
+      <ion-avatar>
+        <img src="../../assets/user.webp" />
+      </ion-avatar>
+      <ion-label class="name-email">
+        <ion-label class="name">Henry Cavil</ion-label>
+        <ion-text>henrycavil@gmail.com</ion-text>
+      </ion-label>
+    </ion-row>
+    <ion-row class="options">
+      <ion-row class="personal-data">
+        <ion-card>
+          <ion-card-content>
+            <ion-label class="data-label">Datos personales</ion-label>
+            <ion-text>Henry Cavil</ion-text>
+          </ion-card-content>
+        </ion-card>  
+      </ion-row>
+      <ion-row class="payment-method">
+        <ion-card>
+          <ion-card-content>
+            <ion-label class="data-label">Método de pago</ion-label>
+            <ion-text><span id="card-counter">2</span> tarjetas registradas</ion-text>
+          </ion-card-content>
+        </ion-card>  
+      </ion-row>
+      <ion-row class="coupons">
+        <ion-card>
+          <ion-card-content>
+            <ion-label class="data-label">Cupones</ion-label>
+            <ion-text><span id="cupon-counter">2</span> disponibles</ion-text>
+          </ion-card-content>
+        </ion-card>  
+      </ion-row>
+      <ion-row class="history">
+        <ion-card>
+          <ion-card-content>
+            <ion-label class="data-label">Historial de pedidos</ion-label>
+            <ion-text><span id="order-counter">5</span> pedidos</ion-text>
+          </ion-card-content>
+        </ion-card>  
+      </ion-row>
+    </ion-row>
+  </ion-grid>
+</ion-content>

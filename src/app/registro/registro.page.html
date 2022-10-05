@@ -11,31 +11,31 @@
           <ion-label class="info">
             <ion-label class="i">
               <ion-text class="var">Nombre</ion-text>
-              <ion-input class="var" type="text"></ion-input>
+              <ion-input class="var input-data" type="text"></ion-input>
             </ion-label>
           </ion-label>
           <ion-label class="info">
             <ion-label class="i">
               <ion-text class="var">Apellido</ion-text>
-              <ion-input class="var" type="text"></ion-input>
+              <ion-input class="var input-data" type="text"></ion-input>
             </ion-label>
           </ion-label>
           <ion-label class="info">
             <ion-label class="i">
               <ion-text class="var">Correo</ion-text>
-              <ion-input class="var" type="email"></ion-input>
+              <ion-input class="var input-data" type="email"></ion-input>
             </ion-label>
           </ion-label>
           <ion-label class="info">
             <ion-label class="i">
               <ion-text class="var">Teléfono</ion-text>
-              <ion-input class="var" type="text"></ion-input>
+              <ion-input class="var input-data" type="text"></ion-input>
             </ion-label>
           </ion-label>
           <ion-label class="info">
             <ion-label class="i">
               <ion-text class="var">Contraseña</ion-text>
-              <ion-input class="var" type="password"></ion-input>
+              <ion-input class="var input-data" type="password"></ion-input>
             </ion-label>
           </ion-label>
         </ion-card-content>
@@ -43,28 +43,23 @@
     </ion-row>
 
     <ion-row class="tail">
-      <ion-label class="action">
-        <div class="terms-div">
-          <ion-checkbox slot="start"></ion-checkbox>
-          <ion-text
-            ><div class="semibold-text">
-              Aceptar
-              <a id="open-terms-modal" expand="block">terminos y condiciones</a>
-            </div></ion-text
-          >
-        </div>
+      <ion-label class="action terms-div semibold-text">
+        <ion-checkbox slot="start"></ion-checkbox>
+
+        <a id="open-terms-modal" expand="block"
+          >Aceptar terminos y condiciones</a
+        >
       </ion-label>
       <ion-label class="action"
-        ><ion-button color="dark" routerLink="" class="register-button"
-          ><ion-text
-            ><div class="semibold-text">Registrarse</div></ion-text
-          ></ion-button
+        ><ion-button
+          color="dark"
+          routerLink=""
+          class="register-button semibold-text"
+          >Registrarse</ion-button
         ></ion-label
       >
-      <ion-label class="action"
-        ><ion-text class="semibold-text">
-          ¿Ya tienes una cuenta? <a routerLink="">Iniciar sesión</a></ion-text
-        ></ion-label
+      <ion-label class="action semibold-text">
+        <a routerLink="">¿Ya tienes una cuenta? Iniciar sesión</a></ion-label
       >
     </ion-row>
   </ion-grid>
@@ -74,10 +69,10 @@
     <ng-template>
       <ion-header>
         <ion-toolbar>
-          <ion-title size="small">Terminos y condiciones</ion-title>
+          <ion-title size="small" class="modal-header">Terminos y condiciones</ion-title>
           <ion-buttons slot="end">
             <ion-button (click)="confirm()">
-              <div class="btn-confirm-modal">Aceptar</div>
+              <div class="btn-confirm-modal modal-header">Aceptar</div>
             </ion-button>
           </ion-buttons>
         </ion-toolbar>

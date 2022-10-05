@@ -1,75 +1,69 @@
-ion-grid{
-    height: 100%;
-}
-
-.header {
+.header, .name, .price, .review, .add{
   display: flex;
   align-items: center;
 }
 
-.back{
-    width: 12%;
+.name, .price, .review{
+    height: 14%;
+}
+
+.header{
+    display: flex;
+}
+
+ion-grid, .product-img{
+    height: 100%;
+}
+
+.cart, .back, .fav-button{
+    width: 15%;
+}
+
+.price, .add{
+    justify-content: space-between;
+}
+
+.content{
+    flex-direction: column;
+    height: 50%;
 }
 
 .detail-title{
-    width: 74% ;
-}
-
-.cart{
-    width: 14%;
+    width: 60% ;
 }
 
 .img{
     height: 50%;
 }
 
-.name{
-    height: 7%;
-    align-items: center;
-}
-
-.price{
-    height: 7%;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.review{
-    height:7% ;
-    align-items: center;
-    gap: 6%;
-}
-
 .comment{
-    height: 19%;
+    height: 38%;
 }
 
 .add{
-    height: 10%;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.product-img{
-    height: 100%;
+    height: 20%;
 }
 
 .price-label{
-    font-size: 1.2rem;
-}
-
-.fav-button{
-    width: 15%;
+    font-size: 1.3rem;
 }
 
 .add-button{
     width: 75%;
 }
 
-.star-number{
-    margin-left: 1vw;
+.product-name{
+    font-size: 1.1rem;
 }
 
-#product-name{
-    font-size: 1.1rem;
+.star-icon{
+    margin: 0;
+}
+
+.star-number{
+    margin-left: 2vw;
+}
+
+.reviews-number{
+    margin-left: 6vw;
 }

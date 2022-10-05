@@ -3,7 +3,7 @@ ion-card-content, ion-row, .tail, .info, .action, .action-net, .icon-container, 
     flex-direction: column;
 }
 
-.info, .action, .action-net, .icon-container{
+.info, .action, .action-net, .icon-container, .start-button, .action-start-button{
     justify-content: center;
 }
 
@@ -19,7 +19,11 @@ ion-card, ion-card-content, .var{
     height: 40%;
 }
 
-.iniciar-button, .networks{
+.action-start-button{
+    display: flex;
+}
+
+.start-button, .networks{
     width: 75%;
 }
 
@@ -53,7 +57,7 @@ ion-grid{
 }
 
 .action{
-    height: 15%;
+    height: 12%;
 }
 
 .networks{
@@ -70,4 +74,8 @@ ion-grid{
 
 ion-modal{
     --height: 33%;
+}
+
+.input-data{
+    font-family: 'Nunito Sans', sans-serif;
 }

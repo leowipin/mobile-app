@@ -30,17 +30,20 @@
 
 ion-title, .btn-confirm-modal{
     font-family: 'Merriweather', serif;
+    color: #303030
 }
 
-ion-label, ion-text{
+ion-label, ion-text, ion-button{
     font-family: 'Nunito Sans', sans-serif;
 }
 
 ion-label{
     font-weight: 700;
+    color: #303030
 }
 
 ion-text{
+    color: #606060;
     font-weight: 400;
 }
 
@@ -79,4 +82,8 @@ ion-modal {
   ion-modal ion-toolbar {
     --background: #242424;
     --color: white;
+  }
+
+  .modal-header{
+    color: white;
   }

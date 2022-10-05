@@ -11,13 +11,13 @@
           <ion-label class="info">
             <ion-label class="i">
               <ion-text class="var">Correo</ion-text>
-              <ion-input class="var" type="email"></ion-input>
+              <ion-input class="var input-data" type="email"></ion-input>
             </ion-label>
           </ion-label>
           <ion-label class="info">
             <ion-label class="i">
               <ion-text class="var">Contraseña</ion-text>
-              <ion-input class="var" type="password"></ion-input>
+              <ion-input class="var input-data" type="password"></ion-input>
             </ion-label>
           </ion-label>
         </ion-card-content>
@@ -25,32 +25,23 @@
     </ion-row>
 
     <ion-row class="tail">
-      <ion-label class="action">
-        <ion-text class="ion-text-center"
-          ><div class="semibold-text">
-            <a id="open-recovery-modal" expand="block"
-              >¿Olvidaste tu contraseña?</a
-            >
-          </div></ion-text
-        >
+      <ion-label class="action ion-text-center semibold-text">
+        <a id="open-recovery-modal" expand="block">¿Olvidaste tu contraseña?</a>
+      </ion-label>
+      <ion-label class="action-start-button">
+        <ion-button
+          color="dark"
+          routerLink="tabs"
+          class="start-button semibold-text"
+          >Iniciar</ion-button
+        ></ion-label
+      >
+      <ion-label class="action semibold-text">
+        <a routerLink="tabs">Omitir</a>
       </ion-label>
 
-      <ion-label class="action"
-        ><ion-button color="dark" routerLink="tabs" class="iniciar-button"
-          ><ion-text
-            ><div class="semibold-text">Iniciar</div></ion-text
-          ></ion-button
-        ></ion-label
-      >
-      <ion-label class="action"
-        ><ion-text class="semibold-text"
-          ><a routerLink="tabs">Omitir</a></ion-text
-        ></ion-label
-      >
-      <ion-label class="action"
-        ><ion-text class="semibold-text"
-          ><a routerLink="registro">Registrarse</a></ion-text
-        ></ion-label
+      <ion-label class="action semibold-text">
+        <a routerLink="registro">Registrarse</a></ion-label
       >
       <ion-label class="action"><ion-text>Iniciar con</ion-text></ion-label>
       <ion-label class="action-net">
@@ -74,10 +65,10 @@
     <ng-template>
       <ion-header>
         <ion-toolbar>
-          <ion-title size="small">¿Olvidaste tu contraseña?</ion-title>
+          <ion-title size="small" class="modal-header">¿Olvidaste tu contraseña?</ion-title>
           <ion-buttons slot="end">
             <ion-button (click)="confirm()">
-              <div class="btn-confirm-modal">Enviar</div>
+              <div class="btn-confirm-modal modal-header">Enviar</div>
             </ion-button>
           </ion-buttons>
         </ion-toolbar>
@@ -85,12 +76,17 @@
       <ion-content class="ion-padding">
         <ion-label class="info">
           <ion-label class="i-modal">
-            <ion-text class="var">Ingresa el correo con el que inicias sesión </ion-text>
-            <ion-input class="var"
-              #inputEmail
-              type="email"
-              (input)="showInput(inputEmail.value)"
-            ></ion-input>
+            <ion-text class="var"
+              >Ingresa el correo con el que inicias sesión
+            </ion-text>
+            <ion-label>
+              <ion-input
+                class="var input-data"
+                #inputEmail
+                type="email"
+                (input)="showInput(inputEmail.value)"
+              ></ion-input>
+            </ion-label>
           </ion-label>
         </ion-label>
       </ion-content>

@@ -11,34 +11,36 @@
 <ion-content> 
   <ion-grid class="main-content">
     <ion-row class="img"> <ion-img class="product-img" src="../../assets/img-prueba.webp"></ion-img> </ion-row>
-    <ion-row class="name"><ion-text><div class="bold-text" id="product-name">Lampara</div></ion-text></ion-row>
-    <ion-row class="price">
-      <ion-label class="price-label">$ 35.00</ion-label>
-      <ion-label>spinner</ion-label>
-    </ion-row>
-    <ion-row class="review"> 
-      <div> 
-        <ion-icon name="star"></ion-icon>
-        <ion-text class="star-number">4.5</ion-text>
-      </div>
-      <a routerLink=""><ion-text>reseñas</ion-text></a>
-    </ion-row>
-    <ion-row class="comment">
-      <ion-content>
-        <ion-text>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-      pellentesque mauris nec feugiat pharetra. Morbi finibus sit amet risus
-      vitae ultrices. Nulla posuere bibendum tellus sit amet facilisis.
-      Aliquam imperdiet enim id erat fermentum, ut fringilla dolor
-      imperdiet. In molestie nisi sed vulputate feugiat. Nam consectetur
-      dapibus diam, vitae luctus libero hendrerit sit amet
-        </ion-text>
-      </ion-content>
-    </ion-row>
-    <ion-row class="add">
-      <ion-button color="dark" class="fav-button"><ion-icon name="bookmark-outline"></ion-icon></ion-button>
-      <ion-button color="dark" class="add-button">Añadir al carrito</ion-button>
-    </ion-row>
+    <ion-row class="content">
+      <ion-row class="name"><ion-label class="product-name">Lampara</ion-label></ion-row>
+      <ion-row class="price">
+        <ion-label class="price-label">$ 35.00</ion-label>
+        <ion-label>spinner</ion-label>
+      </ion-row>
+      <ion-row class="review"> 
+        
+          <ion-img src="../../assets/icon/star-icon.svg" class="star-icon"></ion-img>
+          <ion-label class="star-number">4.5</ion-label>
+        
+        <a routerLink=""><ion-text class="reviews-number">(50) reseñas</ion-text></a>
+      </ion-row>
+      <ion-row class="comment">
+        <ion-content>
+          <ion-text>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+        pellentesque mauris nec feugiat pharetra. Morbi finibus sit amet risus
+        vitae ultrices. Nulla posuere bibendum tellus sit amet facilisis.
+        Aliquam imperdiet enim id erat fermentum, ut fringilla dolor
+        imperdiet. In molestie nisi sed vulputate feugiat. Nam consectetur
+        dapibus diam, vitae luctus libero hendrerit sit amet
+          </ion-text>
+        </ion-content>
+      </ion-row>
+      <ion-row class="add">
+        <ion-button color="dark" class="fav-button"><ion-icon name="bookmark-outline"></ion-icon></ion-button>
+        <ion-button color="dark" class="add-button semibold-text">Añadir al carrito</ion-button>
+      </ion-row>
+  </ion-row>
   </ion-grid>
 </ion-content>
 
