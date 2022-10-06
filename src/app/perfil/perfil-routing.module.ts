@@ -6,7 +6,16 @@ import { PerfilPage } from './perfil.page';
 const routes: Routes = [
   {
     path: '',
-    component: PerfilPage
+    children:[
+      {
+        path: 'tarjetas',
+        loadChildren: () => import('../tarjetas/tarjetas.module').then( m => m.TarjetasPageModule)
+      },
+      {
+        path: '',
+        component: PerfilPage
+      }
+  ]
   }
 ];
 

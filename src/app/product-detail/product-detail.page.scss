@@ -1,4 +1,4 @@
-.header, .name, .price, .review, .add{
+.name, .price, .review, .add{
   display: flex;
   align-items: center;
 }
@@ -7,29 +7,21 @@
     height: 14%;
 }
 
-.header{
-    display: flex;
-}
-
 ion-grid, .product-img{
     height: 100%;
-}
-
-.cart, .back, .fav-button{
-    width: 15%;
 }
 
 .price, .add{
     justify-content: space-between;
 }
 
+.fav-button{
+    width: 15%;
+}
+
 .content{
     flex-direction: column;
     height: 50%;
-}
-
-.detail-title{
-    width: 60% ;
 }
 
 .img{

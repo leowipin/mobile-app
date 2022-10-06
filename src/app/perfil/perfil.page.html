@@ -1,6 +1,10 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title class="ion-text-center"> Perfil</ion-title>
+    <div class="header">
+      <ion-label class="header-icon"></ion-label>
+      <ion-title class="ion-text-center header-title"> Perfil</ion-title>
+      <ion-icon name="log-out-outline" class="header-icon" size="large" routerLink=""></ion-icon>
+    </div>
   </ion-toolbar>
 </ion-header>
 
@@ -19,34 +23,46 @@
       <ion-row class="personal-data">
         <ion-card>
           <ion-card-content>
-            <ion-label class="data-label">Datos personales</ion-label>
-            <ion-text>Henry Cavil</ion-text>
+            <div class="data-div">
+              <ion-label class="data-label">Datos personales</ion-label>
+              <ion-text>Henry Cavil</ion-text>
+            </div>
+            <img src="../../assets/icon/arrow-icon.svg">
           </ion-card-content>
         </ion-card>  
       </ion-row>
       <ion-row class="payment-method">
-        <ion-card>
+        <ion-card routerLink="tarjetas">
           <ion-card-content>
-            <ion-label class="data-label">Método de pago</ion-label>
-            <ion-text><span id="card-counter">2</span> tarjetas registradas</ion-text>
+            <div class="data-div">
+              <ion-label class="data-label">Método de pago</ion-label>
+              <ion-text><span id="card-counter">2</span> tarjetas registradas</ion-text>
+            </div>
+            <img src="../../assets/icon/arrow-icon.svg">
           </ion-card-content>
         </ion-card>  
       </ion-row>
       <ion-row class="coupons">
         <ion-card>
           <ion-card-content>
-            <ion-label class="data-label">Cupones</ion-label>
-            <ion-text><span id="cupon-counter">2</span> disponibles</ion-text>
+            <div class="data-div">
+              <ion-label class="data-label">Cupones</ion-label>
+              <ion-text><span id="coupons-counter">2</span> disponibles</ion-text>
+            </div>
+            <img src="../../assets/icon/arrow-icon.svg">
           </ion-card-content>
         </ion-card>  
       </ion-row>
       <ion-row class="history">
         <ion-card>
           <ion-card-content>
-            <ion-label class="data-label">Historial de pedidos</ion-label>
-            <ion-text><span id="order-counter">5</span> pedidos</ion-text>
+            <div class="data-div">
+              <ion-label class="data-label">Mi historial de pedidos</ion-label>
+              <ion-text><span id="order-counter">5</span> pedidos</ion-text>
+            </div>
+            <img src="../../assets/icon/arrow-icon.svg">
           </ion-card-content>
-        </ion-card>  
+        </ion-card>   
       </ion-row>
     </ion-row>
   </ion-grid>

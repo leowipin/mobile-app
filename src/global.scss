@@ -68,6 +68,19 @@ a{
     font-weight: 400;
 }
 
+.header{
+    display: flex;
+    align-items: center;
+}
+
+.header-icon{
+    width: 20%;
+}
+
+.header-title{
+    width: 60%;
+}
+
 /* ion-modal*/
 ion-modal {
     --border-radius: 16px;
