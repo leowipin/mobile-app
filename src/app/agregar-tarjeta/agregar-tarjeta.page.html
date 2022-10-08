@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="header">
+      <ion-icon name="chevron-back-outline" size="large" class="header-icon" routerLink="/tabs/perfil/tarjetas"></ion-icon>
+      <ion-title class="ion-text-center header-title">Agregar tarjeta</ion-title>
+      <ion-icon class="header-icon"></ion-icon>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row class="holder">
+      <ion-label> Nombre del titular de la tarjeta</ion-label>
+      <ion-text>
+        <ion-input class="input-data" type="text" placeholder="Ex: Henry Cavil"></ion-input>
+      </ion-text>
+    </ion-row>
+    <ion-row class="holder">
+      <ion-label> Numero de tarjeta</ion-label>
+      <ion-text>
+        <ion-input class="input-data" type="text" placeholder="Ex: 9999 9999 9999 9999"></ion-input>
+      </ion-text>
+    </ion-row>
+    <ion-row>
+      <ion-col class="holder">
+        <ion-label>CVV</ion-label>
+      <ion-text>
+        <ion-input class="input-data" type="text" placeholder="Ex: 123"></ion-input>
+      </ion-text>
+      </ion-col>
+      <ion-col class="holder">
+        <ion-label> Fecha de expiración</ion-label>
+      <ion-text>
+        <ion-input class="input-data" type="text" placeholder="Ex: 01/22"></ion-input>
+      </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row class="holder">
+      <ion-label> Alias </ion-label>
+      <ion-text>
+        <ion-input class="input-data" type="text" placeholder="Ex: Mi tarjeta preferida"></ion-input>
+      </ion-text>
+    </ion-row>
+    <ion-row>
+      <ion-col class="add-col">
+        <ion-button
+          color="dark"
+          routerLink=""
+          class="add-button semibold-text"
+          >Agregar</ion-button
+        >
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

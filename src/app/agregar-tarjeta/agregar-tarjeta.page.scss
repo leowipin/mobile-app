@@ -1,0 +1,21 @@
+ion-grid{
+    height: 100%;
+}
+
+ion-input{
+    border: 1px solid #606060;
+    border-radius: 10px;
+}
+
+.holder{
+    flex-direction: column;
+}
+
+.add-col{
+    display: flex;
+    justify-content: center;
+}
+
+.add-button{
+    width: 75%;
+}

@@ -33,11 +33,11 @@ ion-title, .btn-confirm-modal{
     color: #303030
 }
 
-ion-label, ion-text, ion-button{
+ion-label, ion-text, ion-button, ion-item{
     font-family: 'Nunito Sans', sans-serif;
 }
 
-ion-label{
+ion-label, ion-item{
     font-weight: 700;
     color: #303030
 }
@@ -79,6 +79,10 @@ a{
 
 .header-title{
     width: 60%;
+}
+
+.input-data{
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 /* ion-modal*/

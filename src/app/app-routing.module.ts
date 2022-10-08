@@ -18,6 +18,10 @@ const routes: Routes = [
     path: 'tarjetas',
     loadChildren: () => import('./tarjetas/tarjetas.module').then( m => m.TarjetasPageModule)
   },
+  {
+    path: 'agregar-tarjeta',
+    loadChildren: () => import('./agregar-tarjeta/agregar-tarjeta.module').then( m => m.AgregarTarjetaPageModule)
+  },
 
 ];
 @NgModule({

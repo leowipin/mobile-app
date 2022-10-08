@@ -2,13 +2,46 @@
   <ion-toolbar>
     <div class="header">
       <ion-icon name="chevron-back-outline" size="large" class="header-icon" routerLink="/tabs/perfil"></ion-icon>
-      <ion-title class="ion-text-center header-title">Método de pago</ion-title>
+      <ion-title class="ion-text-center header-title">Tarjetas</ion-title>
       <ion-label class="header-icon"></ion-label>
     </div>
-    
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
-
+  <ion-grid class="main-grid">
+    <ion-row>
+      <ion-list>
+        <ion-radio-group value="cards">
+          <ion-item>
+            <ion-label>Tarjeta 1</ion-label>
+            <ion-radio slot="end" value="tarjeta1"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>Tarjeta 2</ion-label>
+            <ion-radio slot="end" value="tarjeta2"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>Tarjeta 3</ion-label>
+            <ion-radio slot="end" value="tarjeta3"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+    </ion-row>
+    <ion-row>
+      <ion-label class="add-div">
+        <ion-icon name="add-circle-outline" size="large" routerLink="agregar-tarjeta"></ion-icon>
+      </ion-label>
+    </ion-row>
+    <ion-row class="save-div">
+        <ion-button
+              color="dark"
+              class="save-button semibold-text"
+              >Guardar</ion-button
+        >
+    </ion-row>
+  </ion-grid>
+    
+  
+  
+    
 </ion-content>
