@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-detail.page.scss'],
 })
 export class ProductDetailPage implements OnInit {
+  cantidad: number = 1;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  decrease() {
+    if (this.cantidad > 1) {
+      this.cantidad = this.cantidad - 1;
+    }
   }
 
+  increase() {
+    this.cantidad = this.cantidad + 1;
+  }
 }

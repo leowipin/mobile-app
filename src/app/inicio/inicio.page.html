@@ -1,6 +1,26 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title class="ion-text-center"> Inicio </ion-title>
+    <div class="header">
+      <ion-icon name="leaf-outline" size="large" class="header-icon"></ion-icon>
+      <ion-title class="ion-text-center header-title">Inicio</ion-title>
+      <ion-icon name="cart-outline" size="large" class="header-icon"></ion-icon>
+    </div>
+    <div class="filters">
+      <ion-text class="search">
+        <ion-input class="search-text" type="text" [(ngModel)]="productName"></ion-input>
+        <button  class="search-button" (click)="changeName()"><ion-icon class="search-icon" size="large" name="search-outline"></ion-icon></button>
+        
+      </ion-text>
+      <ion-list>
+        <ion-item>
+          <ion-select interface="popover" placeholder="Seleccione" [(ngModel)]="selected" (ionChange)="select()">
+            <ion-select-option value="popularidad">Popularidad</ion-select-option>
+            <ion-select-option value="precio menor">Precio menor</ion-select-option>
+            <ion-select-option value="precio mayor">Precio mayor</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+    </div>
   </ion-toolbar>
 </ion-header>
 

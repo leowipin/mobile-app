@@ -1,4 +1,4 @@
-.name, .price, .review, .add{
+.name, .price, .review, .add, .spinner{
   display: flex;
   align-items: center;
 }
@@ -7,11 +7,11 @@
     height: 14%;
 }
 
-ion-grid, .product-img{
+ion-grid, .product-img, .quantity-btn{
     height: 100%;
 }
 
-.price, .add{
+.price, .add, .spinner{
     justify-content: space-between;
 }
 
@@ -58,4 +58,9 @@ ion-grid, .product-img{
 
 .reviews-number{
     margin-left: 6vw;
+}
+
+.spinner{
+    height: 60%;
+    width: 35%;
 }

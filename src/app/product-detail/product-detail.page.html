@@ -15,13 +15,15 @@
       <ion-row class="name"><ion-label class="product-name">Lampara</ion-label></ion-row>
       <ion-row class="price">
         <ion-label class="price-label">$ 35.00</ion-label>
-        <ion-label>spinner</ion-label>
+        <div class="spinner">
+          <ion-button class="quantity-btn" color="dark" (click)="decrease()">-</ion-button>
+          <ion-label >{{cantidad}}</ion-label>
+          <ion-button class="quantity-btn" color="dark" (click)="increase()" >+</ion-button>
+        </div>
       </ion-row>
       <ion-row class="review"> 
-        
           <ion-img src="../../assets/icon/star-icon.svg" class="star-icon"></ion-img>
           <ion-label class="star-number">4.5</ion-label>
-        
         <ion-text class="reviews-number">(50) reseñas</ion-text>
       </ion-row>
       <ion-row class="comment">
