@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
 import { PerfilPage } from './perfil.page';
 
 const routes: Routes = [
@@ -14,6 +13,10 @@ const routes: Routes = [
       {
         path: '',
         component: PerfilPage
+      },
+      {
+        path: 'historial-p',
+        loadChildren: () => import('../historial-p/historial-p.module').then( m=> m.HistorialPPageModule)
       }
   ]
   }
