@@ -8,8 +8,12 @@ export class ServiciosService {
 
   constructor(private http:HttpClient) { }
 
-  getClient(){
-    return this.http.get("https://pokeapi.co/api/v2/pokemon/ditto");
+  getClient(email:string){
+    return this.http.get("https://maryta22.pythonanywhere.com/api/client/"+email);
+  }
+
+  registerClient(client:any){
+    return this.http.post("https://maryta22.pythonanywhere.com/api/client/", client)
   }
 
 

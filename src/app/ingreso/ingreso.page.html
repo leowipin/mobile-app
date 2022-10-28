@@ -11,13 +11,13 @@
           <ion-label class="info">
             <ion-label class="i">
               <ion-text class="var">Correo</ion-text>
-              <ion-input class="var" type="text"></ion-input>
+              <ion-input class="var" type="text" [(ngModel)]="email"></ion-input>
             </ion-label>
           </ion-label>
           <ion-label class="info">
             <ion-label class="i">
               <ion-text class="var">Contraseña</ion-text>
-              <ion-input class="var" type="password"></ion-input>
+              <ion-input class="var" type="password" [(ngModel)]="password"></ion-input>
             </ion-label>
           </ion-label>
         </ion-card-content>
@@ -31,7 +31,7 @@
       <ion-label class="action-start-button">
         <ion-button
           color="dark"
-          routerLink="tabs"
+          (click)="enter()"
           class="start-button semibold-text"
           >Iniciar</ion-button
         ></ion-label

@@ -11,31 +11,31 @@
           <ion-label class="info">
             <ion-label class="i">
               <ion-text class="var">Nombre</ion-text>
-              <ion-input class="var input-data" type="text"></ion-input>
+              <ion-input class="var input-data" type="text" [(ngModel)]="client.name"></ion-input>
             </ion-label>
           </ion-label>
           <ion-label class="info">
             <ion-label class="i">
               <ion-text class="var">Apellido</ion-text>
-              <ion-input class="var input-data" type="text"></ion-input>
+              <ion-input class="var input-data" type="text" [(ngModel)]="client.lastname"></ion-input>
             </ion-label>
           </ion-label>
           <ion-label class="info">
             <ion-label class="i">
               <ion-text class="var">Correo</ion-text>
-              <ion-input class="var input-data" type="email"></ion-input>
+              <ion-input class="var input-data" type="email" [(ngModel)]="client.email"></ion-input>
             </ion-label>
           </ion-label>
           <ion-label class="info">
             <ion-label class="i">
               <ion-text class="var">Teléfono</ion-text>
-              <ion-input class="var input-data" type="text"></ion-input>
+              <ion-input class="var input-data" type="text" [(ngModel)]="client.phone"></ion-input>
             </ion-label>
           </ion-label>
           <ion-label class="info">
             <ion-label class="i">
               <ion-text class="var">Contraseña</ion-text>
-              <ion-input class="var input-data" type="password"></ion-input>
+              <ion-input class="var input-data" type="password" [(ngModel)]="client.password"></ion-input>
             </ion-label>
           </ion-label>
         </ion-card-content>
@@ -53,7 +53,7 @@
       <ion-label class="action"
         ><ion-button
           color="dark"
-          routerLink=""
+          (click)="register()"
           class="register-button semibold-text"
           >Registrarse</ion-button
         ></ion-label

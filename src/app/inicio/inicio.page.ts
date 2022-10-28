@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { ServiciosService } from '../servicio/servicios.service';
 @Component({
   selector: 'app-inicio',
   templateUrl: 'inicio.page.html',
@@ -9,15 +9,19 @@ export class InicioPage {
 
   selected:string;
   productName:string;
+  politica: any ={
+    content:"polticas 4",
+  }
 
-  constructor() {}
+  constructor(private serviciosService: ServiciosService) {}
 
   select(){
     console.log(this.selected)
     // mandar el this.selected a la funcion de servicio
   }
-  changeName(){
-    console.log(this.productName)
+
+  searchName(){
+
   }
 
 }
