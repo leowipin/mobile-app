@@ -13,6 +13,7 @@ export class CarService {
 
   addProduct(product){
     this.cart.push(product);
+    console.log(this.cart);
   }
 
   removeProduct(){

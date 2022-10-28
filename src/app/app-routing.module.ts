@@ -21,9 +21,14 @@ const routes: Routes = [
   {
     path: 'agregar-tarjeta',
     loadChildren: () => import('./agregar-tarjeta/agregar-tarjeta.module').then( m => m.AgregarTarjetaPageModule)
-  },  {
+  },
+  {
     path: 'historial-p',
     loadChildren: () => import('./historial-p/historial-p.module').then( m => m.HistorialPPageModule)
+  },
+  {
+    path: 'carro',
+    loadChildren: () => import('./carro/carro.module').then( m => m.CarroPageModule)
   },
 
 

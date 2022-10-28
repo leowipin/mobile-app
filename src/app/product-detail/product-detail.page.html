@@ -3,7 +3,7 @@
     <div class="header">
       <ion-icon name="chevron-back-outline" size="large" class="header-icon" routerLink="/tabs/inicio"></ion-icon>
       <ion-title class="ion-text-center header-title">Detalle</ion-title>
-      <ion-icon name="cart-outline" size="large" class="header-icon"></ion-icon>
+      <ion-icon routerLink="carro" name="cart-outline" size="large" class="header-icon"></ion-icon>
     </div>
   </ion-toolbar>
 </ion-header>
@@ -48,7 +48,7 @@
         <ion-button color="dark" class="fav-button">
           <ion-icon name="bookmark-outline"></ion-icon>
         </ion-button>
-        <ion-button (click)="addCart()" color="dark" class="add-button semibold-text">Añadir al carrito</ion-button>
+        <ion-button (click)="addCart(id,quantity)" color="dark" class="add-button semibold-text">Añadir al carrito</ion-button>
       </ion-row>
     </ion-row>
   </ion-grid>
