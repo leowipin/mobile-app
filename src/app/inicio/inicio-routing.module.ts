@@ -4,16 +4,22 @@ import { InicioPage } from './inicio.page';
 
 const routes: Routes = [
   {
+    path: 'carro',
+    loadChildren: () => import('../carro/carro.module').then(m => m.CarroPageModule)
+  },
+  {
     path: '',
-    children:[
+
+    children: [
       {
         path: 'product-detail',
-        loadChildren: () => import('../product-detail/product-detail.module').then( m => m.ProductDetailPageModule)
+        loadChildren: () => import('../product-detail/product-detail.module').then(m => m.ProductDetailPageModule)
       },
       {
         path: '',
         component: InicioPage
-      }
+      },
+
     ]
   }
 ];
@@ -22,4 +28,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class InicioPageRoutingModule {}
+export class InicioPageRoutingModule { }

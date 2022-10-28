@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="header">
+      <ion-icon name="chevron-back-outline" size="large" class="header-icon" routerLink="/tabs/inicio"></ion-icon>
+      <ion-title>Carrito</ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <div class="item-cart">
+      <ion-item *ngFor="let item of selectedItem" lines="insert">
+        <ion-card-content class="card-historial">
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-img class="product-img" src="{{URL}}{{item.img}}"></ion-img>
+              </ion-col>
+              <ion-col size="auto">
+                <ion-row>
+                  {{item.name}}
+                </ion-row>
+                <ion-row>
+                  $ {{item.price}}
+                </ion-row>
+                <ion-row>
+                  <ion-button class="quantity-btn" color="dark" (click)="decrease(id)">-</ion-button>
+                  <ion-label style="margin: 5px;">{{item.quantity}}</ion-label>
+                  <ion-button class="quantity-btn" color="dark" (click)="increase(id)">+</ion-button>
+                </ion-row>
+              </ion-col>
+              <ion-col (click)="delete(id)" class="icono-close">
+                <ion-icon name="close-circle-outline"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-item>
+    </div>
+
+    <ion-item lines="none">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            Total:
+          </ion-col>
+          <ion-col size="auto">
+            $ {{total}}
+          </ion-col>
+        </ion-row>
+        <ion-row class="button-row-next">
+          <ion-button style="width: 98%;" color="dark" class="add-button semibold-text">Continuar</ion-button>
+        </ion-row>
+
+      </ion-grid>
+
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>
