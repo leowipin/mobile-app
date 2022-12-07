@@ -9,9 +9,6 @@ export class InicioPage {
 
   selected:string;
   productName:string;
-  politica: any ={
-    content:"polticas 4",
-  }
 
   constructor(private serviciosService: ServiciosService) {}
 
